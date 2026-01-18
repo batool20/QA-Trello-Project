@@ -11,5 +11,21 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^15.8.1"
+<<<<<<< HEAD
+<<<<<<< HEAD
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "save-dev": "^0.0.1-security"
+  },
+   "cypress-cucumber-preprocessor": {
+   "nonGlobalStepDefinitions": true, 
+   "step_definitions": "cypress/e2e/" 
+}
+=======
   }
+>>>>>>> 808ec27 (first commit)
+=======
+  }
+>>>>>>> 808ec27 (first commit)
 }

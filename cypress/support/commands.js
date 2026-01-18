@@ -22,4 +22,32 @@
 //
 //
 // -- This will overwrite an existing command --
+<<<<<<< HEAD
+<<<<<<< HEAD
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+//Cypress.Commands.add('loginToTrello', ()=>{})
+// we need this cusstom command beacause the login process in trello
+Cypress.Commands.add('loginToTrello', ()=>{
+    cy.visit('/login')
+    cy.wait(3000)
+    cy.fixture('trelloUser').then((user)=>{
+        cy.findByDataTestId('username').type(user.email)
+        cy.findByDataTestId('login-submit-idf-testid').click()
+        cy.wait(2000)
+        cy.findByDataTestId('password').type(user.password)
+        cy.findByDataTestId('login-submit-idf-testid').click()
+        cy.wait(6000)
+    })
+})
+// this selector data-testid is used in multiple places so we can use it as a custom command
+Cypress.Commands.add('findByDataTestId', (dataTestId)=>{
+    cy.get(`[data-testid="${dataTestId}"]`)
+})
+=======
+// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+>>>>>>> 808ec27 (first commit)
+=======
+// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+>>>>>>> 808ec27 (first commit)

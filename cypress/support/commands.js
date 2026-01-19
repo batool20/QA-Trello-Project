@@ -22,8 +22,6 @@
 //
 //
 // -- This will overwrite an existing command --
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
@@ -45,9 +43,3 @@ Cypress.Commands.add('loginToTrello', ()=>{
 Cypress.Commands.add('findByDataTestId', (dataTestId)=>{
     cy.get(`[data-testid="${dataTestId}"]`)
 })
-=======
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
->>>>>>> 808ec27 (first commit)
-=======
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
->>>>>>> 808ec27 (first commit)
